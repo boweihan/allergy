@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+test_product = Product.create(name: "Test Product")
+test_ingredient = Ingredient.create(name: "Test Ingredient", products: Product.where(name: "Test Product"))
