@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  
   def products
     @products = Product.all
     render json: @products
@@ -10,22 +11,24 @@ class PagesController < ApplicationController
   end
   
   def cross_reference
-    #look through params for products being posted
-    #loop through those products
-    #check DB to find where product = params[product]
-    #if product exists, grab ingredients and store in ingredients array
-    #for each subarray in ingredients array, find the ones in common (uniq?)
-    #render those ingredents as JSON
+    params[:product] = ["A+D Original Ointment, Diaper Rash \u0026 All Purpose Skincare Formula", "Avon Pink Suede Eau de Toilette Spray", "Avon Vintage Cologne Spray"]
+    @products = Product.where(name: params[:product])
+    ingredients_in_common = nil
+    
+    @products.each do |product|
+      ingredients_in_common == nil ? ingredients_in_common = product.ingredients : ingredients_in_common = ingredients_in_common & product.ingredients
+    end
+    
+    render json: ingredients_in_common
+    #product[]=1&product[]=2 to pass an array of values into the query string
   end
   
   def search_products
-    params[:ingredient] = "Lanolin"
     @products = Ingredient.where(name: params[:ingredient]).first.products
     render json: @products
   end
   
   def search_ingredients
-    params[:product] = "AFM Safecoat WaterShield"
     @ingredients = Product.where(name: params[:product]).first.ingredients
     render json: @ingredients
   end
