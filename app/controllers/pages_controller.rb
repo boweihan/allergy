@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   
   def products
-    @products = Product.where('name LIKE ?', "%#{params[:name]}%")
+    @products = Product.where('lower(name) LIKE ?', "%#{params[:name].downcase}%")
     render json: @products
   end
   
