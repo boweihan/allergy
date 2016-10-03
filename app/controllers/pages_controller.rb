@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   
   def products
-    @products = Product.all
+    @products = Product.where('name LIKE ?', "%#{params[:name]}%")
     render json: @products
   end
   
