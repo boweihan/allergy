@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   end
   
   def ingredients
-    @ingredients = Ingredient.all
+    @ingredients = Ingredient.where('lower(name) LIKE ?', "%#{params[:name].downcase}%").first(100);
     render json: @ingredients
   end
   
