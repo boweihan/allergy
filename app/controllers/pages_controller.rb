@@ -11,7 +11,7 @@ class PagesController < ApplicationController
   end
   
   def cross_reference
-    params[:product] = ["A+D Original Ointment, Diaper Rash \u0026 All Purpose Skincare Formula", "Avon Pink Suede Eau de Toilette Spray", "Avon Vintage Cologne Spray"]
+    # params[:product] = ["A+D Original Ointment, Diaper Rash \u0026 All Purpose Skincare Formula", "Avon Pink Suede Eau de Toilette Spray", "Avon Vintage Cologne Spray"]
     @products = Product.where(name: params[:product])
     ingredients_in_common = nil
     
