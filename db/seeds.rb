@@ -11,40 +11,43 @@
 # test_ingredient = Ingredient.create(name: "Test Ingredient", products: Product.where(name: "Test Product"))
 require 'pry'
 
-product_array = []
-full_ingredient_array = []
-
-File.open("product_names.txt", "r") do |product_names|
-  product_names.each_line do |product|
-    product_array << product
-  end
-end
-
-File.open("ingredient_list.txt", "r") do |ingredient_list|
-  ingredient_list.each_line do |ingredient_line|
-    full_ingredient_array << ingredient_line
-  end
-end
-
-for i in 0..product_array.length
-  product_name = product_array[i]
-  product_name.chop!
-  product = Product.create(name: product_name)
+ActiveRecord::Base.transaction do
   
-  ingredient_line = full_ingredient_array[i].split(":")
-  ingredient_line.pop
-  
-  puts i
-  
-  ingredient_line.each do |ingredient|
-    if Ingredient.where(name: ingredient).first
-      old_associations = Ingredient.where(name: ingredient).first.products
-      old_associations << Product.where(name: product_array[i]).first
-      Ingredient.where(name: ingredient).first.update(products: old_associations)
-    else
-      Ingredient.create(name: ingredient, products: [Product.where(name: product_array[i]).first])
+  product_array = []
+  full_ingredient_array = []
+
+  File.open("product_names_sun.txt", "r") do |product_names|
+    product_names.each_line do |product|
+      product_array << product
     end
-  
+  end
+
+  File.open("ingredient_list_sun.txt", "r") do |ingredient_list|
+    ingredient_list.each_line do |ingredient_line|
+      full_ingredient_array << ingredient_line
+    end
+  end
+
+  for i in 0..product_array.length
+    product_name = product_array[i]
+    product_name.chop!
+    product = Product.create(name: product_name, categories: "sun")
+    
+    ingredient_line = full_ingredient_array[i].split(":")
+    ingredient_line.pop
+    
+    puts product_name;
+    puts ingredient_line;
+    
+    ingredient_line.each do |ingredient|
+      if Ingredient.where(name: ingredient).first
+        old_associations = Ingredient.where(name: ingredient).first.products
+        old_associations << Product.where(name: product_array[i]).first
+        Ingredient.where(name: ingredient).first.update(products: old_associations)
+      else
+        Ingredient.create(name: ingredient, products: [Product.where(name: product_array[i]).first])
+      end  
+    end
   end
 end
 
