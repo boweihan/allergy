@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+  require 'pry'
   
   def products
     @products = Product.where('lower(name) LIKE ?', "%#{params[:name].downcase}%").first(100);
