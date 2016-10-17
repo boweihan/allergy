@@ -3825,10 +3825,7 @@ philosophy Shower Gel, Snowflake (2012 formulation)
 philosophy shower gel, snowflake (2013 formulation)
 philosophy Shower Gel, Sugar Plum Frost (2012 formulation)
 philosophy Shower Gel, Sweet On You (2012 formulation)
-
-Error
-504
-Ray ID: 2f256e4ae687303c • 2016-10-15 18:46:54 UTC
+Philosophy Shower Gel, The Gingerbread Girl (2012 formulation)
 philosophy shower gel, the gingerbread man (2012 formulation)
 philosophy shower gel, tinsel town (2013 formulation)
 philosophy Shower Gel, Twinkle Berry (2012 formulation)
@@ -5427,18 +5424,12 @@ DDF Glycolic 10% Exfoliating Oil Control Gel (2013 formulation)
 derma e Anti-Wrinkle Vitamin A Glycolic Scrub (2013 formulation)
 dermalogica gentle cream exfoliant, with Alpha Hydroxy Acid Complex (2013 formulation)
 dermalogica Multivitamin Thermafoliant (2013 formulation)
-
-Error
-522
-Ray ID: 2f2582f4866d052e • 2016-10-15 19:00:16 UTC
+dermalogica skin prep scrub (2013 formulation)
 dr. Brandt microdermabrasion skin exfoliant (2013 formulation)
 Exuviance Rejuvenating Bionic Scrub (2013 formulation)
 H2O Plus Sea Marine Body Scrub (2013 formulation)
 H2O Plus Spa Sea Marine Body Scrub (2013 formulation)
-
-Error
-522
-Ray ID: 2f258374f38d0fa5 • 2016-10-15 19:00:36 UTC
+Hempz Original Sugar Body Scrub (2013 formulation)
 Hempz Pomegranate Sugar Body Scrub (2013 formulation)
 Hempz Vanilla Plum Sugar Body Scrub (2013 formulation)
 Hydroxatone Revitalizing Microdermabrasion (2013 formulation)
@@ -5465,10 +5456,7 @@ Tan Towel 3-in-1 Exfoliating Towelette (2013 formulation)
 Tree Hut Body Scrub, Lavender & Chamomile (2013 formulation)
 Tree Hut Body Scrub, Vanilla Spice (2012 formulation)
 Walgreens Blemish & Blackhead Control Apricot Scrub (2012 formulation)
-
-Error
-522
-Ray ID: 2f25842ce015303c • 2016-10-15 19:01:06 UTC
+alessandro Micro Peel Deep Cleansing Hand Gel (2013 formulation)
 blinc resurf.a.stic Body (2013 formulation)
 Bodycology Anti-Bacterial Scrubbing Hand Soap, Brown Sugar Vanilla (2013 formulation)
 Boots Botanics Cleansing Body Scrub (2013 formulation)
@@ -5509,10 +5497,7 @@ Petal Fresh Botanicals Facial Scrub, Aloe & Apricot (2012 formulation)
 Peter Thomas Roth Clinical Peel & Reveal Dermal Resurfacer (2013 formulation)
 Vitabath Original Spring Green Exfoliating Sugar Scrub (2013 formulation)
 Archipelago Botanicals Sugar Scrub for the Body, Pomegranate (2013 formulation)
-
-Error
-522
-Ray ID: 2f25850652af303c • 2016-10-15 19:01:41 UTC
+Crabtree & Evelyn La Source Exfoliating Body Scrub (2013 formulation)
 DermaNew Microdermabrasion Facial Rejuvenation System for Sensitive/Normal Skin (2012 formulation)
 H2O Plus Aqualibrium Sea Mineral Scrub (2013 formulation)
 John Allan's Scrub, Exfoliating Face Cleanser (2013 formulation)
