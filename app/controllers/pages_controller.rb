@@ -32,7 +32,7 @@ class PagesController < ApplicationController
       products_in_common == nil ? products_in_common = ingredient.products : products_in_common = products_in_common & ingredient.products
     end
     
-    render json: products_in_common
+    render json: products_in_common.first(100)
   end
   
   def search_products
